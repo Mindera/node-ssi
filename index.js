@@ -27,7 +27,7 @@ var async = require('async');
 var syntaxReg = /<!--#([^\r\n]+?)-->/mg;
 var includeFileReg = /<!--#\s*include\s+(file|virtual)=(['"])([^\r\n\s]+?)\2\s*(.*?)-->/;
 var setVarReg = /<!--#\s*set\s+var=(['"])([^\r\n]+?)\1\s+value=(['"])([^\r\n]*?)\3\s*-->/;
-var echoReg = /<!--#\s*echo\s+var=(['"])([^\r\n]+?)\1(\s+default=(['"])([^\r\n]+?)\4)?\s*-->/;
+var echoReg = /<!--#\s*echo\s+var=(['"])([^\r\n]+?)\1(\s+default=(['"])([^\r\n]+?)\4)?(\s+encoding=(['"])([^\r\n]+?)\4)?\s*-->/;
 var ifReg = /<!--#\s*if\s+expr=(['"])([^\r\n]+?)\1\s*-->/;
 var elifReg = /<!--#\s*elif\s+expr=(['"])([^\r\n]+?)\1\s*-->/;
 var elseReg = /<!--#\s*else\s*-->/;
